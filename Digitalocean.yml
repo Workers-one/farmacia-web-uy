@@ -1,0 +1,13 @@
+services:
+  - name: farmacia-web-uy
+    image:
+      registry: DOCKER_HUB
+      repository: workers-one/farmacia-web-uy
+      tag: latest
+    envs:
+      - key: DATABASE_URL
+        value: postgres://usuario:contraseña@servidor:5432/basededatos
+      - key: ODOO_ADMIN_PASSWD
+        value: "clave_secreta"
+    ports:
+      - 8069
