@@ -30,3 +30,41 @@ services:
 
 volumes:
   odoo-db-data:
+FROM odoo:18.0
+
+Configurar el usuario
+
+USER root
+
+Instalar dependencias adicionales si son necesarias
+
+RUN apt-get update && apt-get install -y 
+nano 
+git 
+unzip 
+&& rm -rf /var/lib/apt/lists/*
+
+Crear directorio para los addons personalizados
+
+RUN mkdir -p /mnt/extra-addons && chown -R odoo:odoo /mnt/extra-addons
+
+Copiar los addons personalizados al contenedor
+
+COPY ./odoo-addons /mnt/extra-addons
+
+Cambiar permisos
+
+RUN chown -R odoo:odoo /mnt/extra-addons
+
+Cambiar a usuario Odoo
+
+USER odoo
+
+Exponer puerto de Odoo
+
+EXPOSE 8069
+
+Comando de inicio
+
+CMD ["odoo"]
+
