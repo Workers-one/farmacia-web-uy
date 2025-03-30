@@ -11453,7 +11453,7 @@ msgstr "取引先"
 #: model:ir.model.fields,field_description:account.field_res_partner__partner_company_registry_placeholder
 #: model:ir.model.fields,field_description:account.field_res_users__partner_company_registry_placeholder
 msgid "Partner Company Registry Placeholder"
-msgstr ""
+msgstr "取引先企業の登録プレースホルダー"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_res_partner__contract_ids
@@ -17858,9 +17858,8 @@ msgstr "その他仕訳用に支払登録することはできません。"
 #. module: account
 #. odoo-python
 #: code:addons/account/models/mail_message.py:0
-msgid ""
-"You cannot remove parts of the audit trail. Archive the record instead."
-msgstr " 監査証跡の一部を削除することはできません。代わりに記録をアーカイブして下さい。"
+msgid "You cannot remove parts of the audit trail."
+msgstr ""
 
 #. module: account
 #. odoo-python

@@ -6,8 +6,8 @@
 # Nancy Momoland <thanh.np2502@gmail.com>, 2024
 # Vo Thanh Thuy, 2024
 # Tiffany Chang, 2024
-# Thi Huong Nguyen, 2025
 # Wil Odoo, 2025
+# Thi Huong Nguyen, 2025
 # 
 msgid ""
 msgstr ""
@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-19 20:36+0000\n"
 "PO-Revision-Date: 2024-09-25 09:41+0000\n"
-"Last-Translator: Wil Odoo, 2025\n"
+"Last-Translator: Thi Huong Nguyen, 2025\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1037,8 +1037,8 @@ msgid ""
 "At the session closing: A picking is created for the entire session when it's closed\n"
 " In real time: Each order sent to the server create its own picking"
 msgstr ""
-"Khi đóng phiên: Một phiếu lấy hàng được tạo cho cả phiên khi đóng \n"
-" Trong thời gian thực: Mỗi đơn hàng gửi tới máy chủ tạo ra một phiếu lấy hàng riêng"
+"Khi đóng phiên: Một phiếu xuất kho được tạo cho cả phiên khi đóng \n"
+" Trong thời gian thực: Mỗi đơn hàng gửi tới máy chủ tạo ra một phiếu xuất kho riêng"
 
 #. module: point_of_sale
 #: model:product.template,description_sale:point_of_sale.sport_shoes_product_template
@@ -1421,13 +1421,13 @@ msgstr ""
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/screens/scale_screen/scale_service.js:0
 msgid "Cannot weigh product - IoT Box is disconnected"
-msgstr ""
+msgstr "Không thể cân sản phẩm - Hộp IoT đã bị ngắt kết nối"
 
 #. module: point_of_sale
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/screens/scale_screen/scale_service.js:0
 msgid "Cannot weigh product - Scale is not connected to IoT Box"
-msgstr ""
+msgstr "Không thể cân sản phẩm - Cân không được kết nối với Hộp IoT"
 
 #. module: point_of_sale
 #. odoo-python
@@ -2117,7 +2117,7 @@ msgstr "Kết nối đến Proxy"
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/customer_display/utils.js:0
 msgid "Connecting to the IoT Box"
-msgstr ""
+msgstr "Đang kết nối với Hộp IoT"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -3059,7 +3059,7 @@ msgstr "Thông tin bổ sung"
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_order__failed_pickings
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_session__failed_pickings
 msgid "Failed Pickings"
-msgstr "Phiếu lấy hàng hỏng"
+msgstr "Phiếu xuất kho không thành công"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -3510,8 +3510,8 @@ msgid ""
 "based on the greatest product lead time. Otherwise, it will be based on the "
 "shortest."
 msgstr ""
-"Nếu bạn giao tất cả sản phẩm cùng lúc, phiếu xuất kho sẽ được lên lịch dựa "
-"vào thời gian giao sản phẩm dài nhất. Nếu không, phiếu xuất kho sẽ được dựa "
+"Nếu bạn giao tất cả sản phẩm cùng lúc, lệnh giao hàng sẽ được lên lịch dựa "
+"vào thời gian giao sản phẩm dài nhất. Nếu không, lệnh giao hàng sẽ được dựa "
 "trên thời gian ngắn nhất. "
 
 #. module: point_of_sale
@@ -4256,7 +4256,7 @@ msgstr "Tên"
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/navbar/navbar.js:0
 msgid "Navigate to your PoS Customer Display on the other computer"
-msgstr ""
+msgstr "Điều hướng đến Màn hình PoS cho khách hàng trên máy tính khác"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -4454,7 +4454,7 @@ msgstr "Không tìm thấy đơn hàng"
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/screens/product_screen/product_screen.js:0
 msgid "No other products found for \"%s\"."
-msgstr ""
+msgstr "Không tìm thấy sản phẩm nào khác cho \"%s\"."
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -5239,7 +5239,7 @@ msgstr "Chọn danh mục sản phẩm POS có sẵn"
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_order__picking_ids
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_session__picking_ids
 msgid "Picking"
-msgstr "Phiếu lấy hàng"
+msgstr "Phiếu xuất kho"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_order__picking_count
@@ -5259,7 +5259,7 @@ msgstr "Kiểu lấy hàng"
 #: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_pos_form
 #: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_session_form
 msgid "Pickings"
-msgstr "Phiếu lấy hàng"
+msgstr "Phiếu xuất kho"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -5411,7 +5411,7 @@ msgstr "Vui lòng chọn một khách hàng"
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/navbar/navbar.js:0
 msgid "PoS Customer Display opened in a new window"
-msgstr ""
+msgstr "Màn hình PoS cho khách hàng được mở trong một cửa sổ mới"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
@@ -6697,7 +6697,7 @@ msgstr "Cân"
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/screens/scale_screen/scale_screen.js:0
 msgid "Scale error"
-msgstr ""
+msgstr "Lỗi cân"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -7268,7 +7268,7 @@ msgstr "Quy tắc tồn kho"
 #. odoo-python
 #: code:addons/point_of_sale/models/pos_order.py:0
 msgid "Stock input for %s"
-msgstr "Đầu vào tồn kho cho %s"
+msgstr "Nhập kho cho %s"
 
 #. module: point_of_sale
 #. odoo-python
@@ -8560,7 +8560,7 @@ msgstr "Lỗi không xác định"
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/screens/scale_screen/scale_service.js:0
 msgid "Unnamed Product"
-msgstr ""
+msgstr "Sản phẩm không tên"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.product_product_view_form_normalized_pos
@@ -8783,7 +8783,7 @@ msgstr "Lịch sử trao đổi qua trang web"
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/customer_display/customer_display.xml:0
 msgid "Weighing Product:"
-msgstr ""
+msgstr "Cân sản phẩm:"
 
 #. module: point_of_sale
 #: model:ir.model.fields.selection,name:point_of_sale.selection__barcode_rule__type__weight
